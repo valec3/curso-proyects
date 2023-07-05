@@ -1,0 +1,152 @@
+:root{
+    --primario:#9c27b0;
+    --primario2:#891190;
+    --secundario:#ffce00;
+    --secundario2:rgb(233,287,2);
+}
+
+
+*{
+    /* margin: 0; padding: 0; */
+    font-family: 'Staatliches', cursive;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+/* GLOBALES */
+body{
+    background: var(--primario);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.container{
+    max-width: 75rem;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3{
+    text-align: center;
+    color: var(--secundario);
+}
+h1{
+    font-size: 3rem;
+    
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    margin: 2rem 0 ;
+}
+
+/* nav */
+
+.navbar{
+    background: var(--primario2);
+    padding: .8rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navbar__link{
+    color: #fff;
+    font-size: 2rem;
+}
+.navbar__link:hover{
+    color: var(--secundario);
+}
+.navbar__link--active{
+    color: var(--secundario);
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--primario2);
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+.footer__text{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.grid{
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 768px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/* product */
+
+.product{
+    background-color: var(--primario2);
+    padding: 1rem;
+}
+.product__img{
+    width: 100%;
+}
+
+.product__name{
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+.product__price{
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: var(--secundario);
+    line-height: 1.3;
+}
+
+.grafic{
+    min-height: 18.75rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.grafic--camisas{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url("../img/grafico1.jpg");
+}
+.grafic--node{
+    grid-column: 1/3;
+    grid-row: 8/9;
+    background-image: url("../img/grafico2.jpg");
+}
+@media (min-width: 768px){
+    .grafic--node{
+        grid-row: 5/6;
+        grid-column: 2/4;
+    }
+}
