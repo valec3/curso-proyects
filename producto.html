@@ -22,8 +22,25 @@
         <a class="navbar__link navbar__link--active" href="./index.html">Tienda</a>
         <a class="navbar__link" href="./nosotros.html">Nosotros</a>
     </nav>
-    <main>
-        <h1>Producto</h1>
+    <main class="container">
+        <h1>React JS</h1>
+        <div class="camisa">
+            <img class="camisa__img" src="img/3.jpg" alt="imagen del producto">
+            <div class="camisa__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aspernatur magnam enim, quo totam, voluptate facilis autem hic pariatur deleniti possimus repellat veniam architecto nulla.</p>
+                <form class="form" action="">
+                    <select class="form__campo" name="" id="">
+                        <option value="" disabled selected>-- Seleccionar talla --</option>
+                        <option value="">Chica</option>
+                        <option value="">Mediana</option>
+                        <option value="">Grande</option>
+                    </select>
+                    <input class="form__campo" type="number" placeholder="cantidad" min="1">
+                    <input class="form__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+
     </main>
     <footer class="footer">
         <p class="footer__text">Github Valece</p>
